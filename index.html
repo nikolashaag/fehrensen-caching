@@ -261,18 +261,19 @@ img{display:block;max-width:100%;height:auto}
 
 /* ================= MEDITATIONSREISEN (showpiece) ================= */
 .reise{position:relative;color:var(--cream);background:var(--ink);overflow:hidden}
-.reise-bg{position:absolute;inset:0;z-index:0}
-.reise-bg img{width:100%;height:100%;object-fit:cover;object-position:center 70%}
+.reise-hero{position:relative;overflow:hidden;background:#A2B1BF;min-height:90vh;display:flex}
+.reise-bg{position:absolute;left:0;right:0;bottom:0;z-index:0}
+.reise-bg img{width:100%;height:auto;display:block}
 .reise-bg::after{content:"";position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(22,30,26,.62),rgba(22,30,26,.78) 55%,rgba(20,27,23,.96))}
-.reise-top{position:relative;z-index:2;min-height:78vh;display:flex;align-items:flex-end;
+  background:linear-gradient(180deg,rgba(20,28,24,.28) 0%,rgba(20,28,24,.30) 44%,rgba(20,28,24,.60) 76%,rgba(18,25,21,.92) 100%)}
+.reise-top{position:relative;z-index:2;width:100%;align-self:flex-end;
   padding-top:clamp(4rem,9vw,8rem);padding-bottom:clamp(2.5rem,5vw,4rem)}
 .reise-top .kicker{color:#E8C9A8}
 .reise-top .kicker::before{background:#E8C9A8}
 .reise-quote{font-family:var(--font-display);font-weight:400;font-style:italic;
   font-size:clamp(2rem,1.4rem + 3.4vw,4.4rem);line-height:1.08;letter-spacing:-.02em;
   color:var(--cream);max-width:20ch;margin-top:1rem;text-shadow:0 2px 40px rgba(0,0,0,.3)}
-.reise-body{position:relative;z-index:2;padding-bottom:clamp(4rem,8vw,7rem)}
+.reise-body{position:relative;z-index:2;padding-top:clamp(2.5rem,5vw,4rem);padding-bottom:clamp(4rem,8vw,7rem)}
 .reise-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,5vw,4.5rem);align-items:start}
 .reise-prose p{color:rgba(243,236,223,.82);margin-bottom:1.1rem;max-width:60ch;line-height:1.72}
 .reise-prose p:first-child::first-letter{
@@ -464,6 +465,7 @@ h1,h2,h3,h4,h5{font-weight:400;letter-spacing:-.01em}
 .praxis-card p{color:var(--text-soft);font-size:.98rem;margin:0}
 .praxis-card .addr{margin-top:.9rem;font-size:.84rem;font-weight:700;color:var(--clay-deep);letter-spacing:.04em}
 @media (max-width:600px){.praxis-card{max-width:none}}
+@media (max-width:719px){.reise-hero{min-height:78vh}.reise-bg{inset:0}.reise-bg img{height:100%;object-fit:cover;object-position:center 60%}}
 </style>
 </head>
 <body>
@@ -482,7 +484,7 @@ h1,h2,h3,h4,h5{font-weight:400;letter-spacing:-.01em}
       <li><a href="#ueber">Über mich</a></li>
       <li><a href="#preise">Preise</a></li>
     </ul>
-    <a class="btn nav-head-cta" href="mailto:kontakt@fehrensen-coaching.de?subject=Terminanfrage%20Coaching">Termin buchen</a>
+    <a class="btn nav-head-cta" href="#kontakt">Termin buchen</a>
   </nav>
   <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -499,7 +501,7 @@ h1,h2,h3,h4,h5{font-weight:400;letter-spacing:-.01em}
     <h1 data-h="2">Finde Deine <em>Balance</em></h1>
     <p class="hero-lead" data-h="3">Die Gründe für Stress sind so vielseitig und individuell wie die Formen, in denen er sich zeigt. Gemeinsam finden wir die Auslöser und die Methoden, die Dich zurück in Deine innere Balance bringen.</p>
     <div class="hero-cta" data-h="4">
-      <a class="btn btn--clay" href="mailto:kontakt@fehrensen-coaching.de?subject=Terminanfrage%20Coaching">Termin buchen <span class="arr">↗</span></a>
+      <a class="btn btn--clay" href="#kontakt">Termin buchen <span class="arr">↗</span></a>
       <a class="btn btn--ghost" href="#entspannung">Angebote entdecken</a>
     </div>
   </div>
@@ -581,12 +583,14 @@ h1,h2,h3,h4,h5{font-weight:400;letter-spacing:-.01em}
 
 <!-- ============ MEDITATIONSREISEN ============ -->
 <section class="reise" id="reisen">
-  <div class="reise-bg"><img src="assets/mongolia.jpg" alt="Pferd in der weiten mongolischen Steppe vor schneebedeckten Bergen in der Abenddämmerung" loading="lazy" /></div>
+  <div class="reise-hero">
+    <div class="reise-bg"><img src="assets/mongolia.jpg" alt="Pferd in der weiten mongolischen Steppe vor schneebedeckten Bergen in der Abenddämmerung" loading="lazy" /></div>
   <div class="wrap reise-top">
     <div data-reveal>
       <span class="kicker">03 — Meditationsreisen</span>
       <p class="reise-quote">Erlebe die absolute Stille der mongolischen Steppe und finde zurück zum Ursprung.</p>
     </div>
+  </div>
   </div>
   <div class="wrap reise-body">
     <div class="reise-grid">
