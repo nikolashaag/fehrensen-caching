@@ -451,6 +451,19 @@ h1,h2,h3,h4,h5{font-weight:400;letter-spacing:-.01em}
 .site-head.scrolled .brand .logo-mark{background-color:var(--clay)}
 .foot-brand .logo-mark{width:25px;height:30px;background-color:var(--clay)}
 .ens-divide .logo-mark{width:34px;height:40px;background-color:var(--moss)}
+
+/* ================= PRAXIS ================= */
+.praxis{position:relative}
+.praxis-img{width:100%;height:clamp(380px,60vh,620px);object-fit:cover;object-position:center 58%;display:block}
+.praxis-cap{position:absolute;left:0;right:0;bottom:0}
+.praxis-cap .inner{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
+.praxis-card{background:var(--paper);border-radius:var(--r);padding:clamp(1.4rem,3vw,2.2rem);max-width:450px;
+  margin-bottom:clamp(1.5rem,4vw,2.6rem);box-shadow:0 34px 70px -32px rgba(20,28,22,.55)}
+.praxis-card .kicker{margin-bottom:.7rem}
+.praxis-card h3{font-size:clamp(1.4rem,1.1rem+1.1vw,2rem);font-weight:400;margin:0 0 .7rem;line-height:1.12;color:var(--ink)}
+.praxis-card p{color:var(--text-soft);font-size:.98rem;margin:0}
+.praxis-card .addr{margin-top:.9rem;font-size:.84rem;font-weight:700;color:var(--clay-deep);letter-spacing:.04em}
+@media (max-width:600px){.praxis-card{max-width:none}}
 </style>
 </head>
 <body>
@@ -620,6 +633,19 @@ h1,h2,h3,h4,h5{font-weight:400;letter-spacing:-.01em}
       </div>
     </div>
   </div>
+</section>
+
+<!-- ============ PRAXIS ============ -->
+<section class="praxis" id="praxis">
+  <img class="praxis-img" src="assets/practice.jpg" alt="Praxisraum von Fehrensen Coaching in Trostberg mit zwei Sesseln, Pflanzen und viel Tageslicht" loading="lazy" />
+  <div class="praxis-cap"><div class="inner">
+    <div class="praxis-card" data-reveal>
+      <span class="kicker">Meine Praxis</span>
+      <h3>Ein Ort zum Ankommen, mitten in Trostberg</h3>
+      <p>Zwei bequeme Sessel, viel Tageslicht und eine ruhige, persönliche Atmosphäre. Hier nehmen wir uns in aller Ruhe Zeit für Dich.</p>
+      <p class="addr">Gabelsbergerstr. 4 · 83308 Trostberg</p>
+    </div>
+  </div></div>
 </section>
 
 <!-- ============ PREISE ============ -->
