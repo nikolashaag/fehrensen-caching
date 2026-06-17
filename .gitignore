@@ -1,0 +1,3 @@
+.DS_Store
+# Local-only self-contained artifact (large base64 build of index.html), not needed for the live site
+fehrensen-coaching.html

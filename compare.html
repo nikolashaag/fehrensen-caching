@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Stil-Auswahl · Fehrensen Coaching</title>
+<meta name="robots" content="noindex" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Mulish:wght@300;400;500;600&family=Jost:wght@300;400;500&family=Hanken+Grotesk:wght@300;400;500;600&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --cream:#F3ECDF; --paper:#FAF6EE; --ink:#222C25; --ink-soft:#33413A;
+  --moss:#6E7D60; --text:#2B312A; --text-soft:#5C6258; --line:rgba(34,44,37,.16);
+  --sans:'Mulish',-apple-system,sans-serif; --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);background:var(--cream);color:var(--text);line-height:1.6;
+  -webkit-font-smoothing:antialiased;padding:clamp(1.5rem,5vw,4rem)}
+.head{max-width:1180px;margin:0 auto clamp(2rem,4vw,3.2rem)}
+.brand{display:flex;align-items:center;gap:.55rem;font-family:'Fraunces',serif;font-size:1.2rem;color:var(--ink);font-weight:500}
+.brand svg{width:22px;height:22px}
+.brand circle{fill:none;stroke:#BB6F4B;stroke-width:1.6}
+.head h1{font-family:'Fraunces',serif;font-weight:400;font-size:clamp(2rem,1.4rem+2.4vw,3.4rem);
+  color:var(--ink);letter-spacing:-.015em;margin:1.4rem 0 .5rem;line-height:1.05}
+.head p{color:var(--text-soft);max-width:62ch;font-size:1.05rem}
+.grid{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden;
+  display:flex;flex-direction:column;transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
+.card:hover{transform:translateY(-5px);box-shadow:0 32px 60px -34px rgba(34,44,37,.42)}
+.specimen{padding:2rem 1.8rem;border-bottom:1px solid var(--line);position:relative;min-height:230px;display:flex;flex-direction:column;justify-content:center}
+.tag{position:absolute;top:1.1rem;left:1.1rem;font-size:.66rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--text-soft)}
+.swatch{position:absolute;top:1rem;right:1.1rem;width:22px;height:22px;border-radius:50%}
+.big{font-size:2.5rem;line-height:.98;letter-spacing:-.02em;color:var(--ink)}
+.big em{font-style:italic;display:block}
+.sample{margin-top:1rem;font-size:.92rem;color:var(--text-soft);max-width:34ch}
+.meta{padding:1.3rem 1.8rem 1.6rem;display:flex;flex-direction:column;gap:.7rem;flex:1}
+.meta .name{font-family:'Fraunces',serif;font-size:1.35rem;color:var(--ink);font-weight:500}
+.fonts{font-size:.82rem;color:var(--text-soft);line-height:1.5}
+.fonts b{color:var(--ink-soft);font-weight:600}
+.go{margin-top:auto;display:inline-flex;align-items:center;justify-content:center;gap:.5em;
+  text-decoration:none;font-weight:600;font-size:.92rem;color:var(--paper);background:var(--ink);
+  padding:.85em 1.4em;border-radius:100px;transition:background .35s var(--ease),transform .35s var(--ease)}
+.go:hover{transform:translateY(-2px)}
+.foot{max-width:1180px;margin:2.2rem auto 0;font-size:.85rem;color:var(--text-soft)}
+
+.s-current .big{font-family:'Fraunces',serif;font-weight:400}
+.s-current .big em{color:#BB6F4B}
+.s-current .sample{font-family:'Mulish',sans-serif}
+.s-current .swatch{background:#BB6F4B}
+.s-current .go{background:#222C25}
+.s-current .go:hover{background:#BB6F4B}
+
+.s-serene .specimen{background:#F6F3EC}
+.s-serene .big{font-family:'Jost',sans-serif;font-weight:400}
+.s-serene .big em{color:#B07C66;font-style:normal}
+.s-serene .sample{font-family:'Hanken Grotesk',sans-serif;font-weight:300}
+.s-serene .swatch{background:#B07C66}
+.s-serene .go{background:#242A22}
+.s-serene .go:hover{background:#B07C66}
+
+.s-modern .specimen{background:#F4F1E9}
+.s-modern .big{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;letter-spacing:-.035em}
+.s-modern .big em{color:#B65F3B;font-style:italic}
+.s-modern .sample{font-family:'Instrument Sans',sans-serif}
+.s-modern .swatch{background:#B65F3B}
+.s-modern .go{background:#1E231E;border-radius:8px}
+.s-modern .go:hover{background:#B65F3B}
+
+@media (max-width:860px){.grid{grid-template-columns:1fr;max-width:460px}}
+</style>
+</head>
+<body>
+  <div class="head">
+    <div class="brand"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>Fehrensen Coaching</div>
+    <h1>Drei Stil-Richtungen zur Auswahl</h1>
+    <p>Gleicher Inhalt, gleicher Aufbau, gleiches Kontaktformular. Nur Schrift, Farbe und Anmutung unterscheiden sich. Klick Dich durch und sag mir, welche Richtung sich für Dich am stimmigsten anfühlt.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card s-current">
+      <div class="specimen">
+        <span class="tag">Aktuell</span><span class="swatch"></span>
+        <div class="big">Finde Deine <em>Balance</em></div>
+        <p class="sample">Gemeinsam finden wir die Auslöser und die Methoden, die Dich zurück in Deine innere Balance bringen.</p>
+      </div>
+      <div class="meta">
+        <div class="name">Soft Editorial</div>
+        <div class="fonts"><b>Display:</b> Fraunces &nbsp;·&nbsp; <b>Text:</b> Mulish<br>Warm, weich, redaktionell. Die aktuelle Version mit Terrakotta-Akzent.</div>
+        <a class="go" href="index.html" target="_blank" rel="noopener">Seite ansehen →</a>
+      </div>
+    </div>
+
+    <div class="card s-serene">
+      <div class="specimen">
+        <span class="tag">Variante 1</span><span class="swatch"></span>
+        <div class="big">Finde Deine <em>Balance</em></div>
+        <p class="sample">Gemeinsam finden wir die Auslöser und die Methoden, die Dich zurück in Deine innere Balance bringen.</p>
+      </div>
+      <div class="meta">
+        <div class="name">Serene</div>
+        <div class="fonts"><b>Display:</b> Jost &nbsp;·&nbsp; <b>Text:</b> Hanken Grotesk<br>Geometrisch, leicht, viel Luft. Ruhig und minimalistisch, mit weichem Rosé-Akzent und Versal-Buttons.</div>
+        <a class="go" href="variant-serene.html" target="_blank" rel="noopener">Seite ansehen →</a>
+      </div>
+    </div>
+
+    <div class="card s-modern">
+      <div class="specimen">
+        <span class="tag">Variante 2</span><span class="swatch"></span>
+        <div class="big">Finde Deine <em>Balance</em></div>
+        <p class="sample">Gemeinsam finden wir die Auslöser und die Methoden, die Dich zurück in Deine innere Balance bringen.</p>
+      </div>
+      <div class="meta">
+        <div class="name">Modern</div>
+        <div class="fonts"><b>Display:</b> Bricolage Grotesque &nbsp;·&nbsp; <b>Text:</b> Instrument Sans<br>Kräftig, kompakt, zeitgemäß. Kühlere Palette, Rostakzent.</div>
+        <a class="go" href="variant-modern.html" target="_blank" rel="noopener">Seite ansehen →</a>
+      </div>
+    </div>
+  </div>
+
+  <p class="foot">Tipp: Die Links öffnen jede Version in einem neuen Tab, so kannst Du bequem hin- und herwechseln.</p>
+</body>
+</html>

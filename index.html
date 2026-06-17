@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fehrensen Coaching · Entspannung, Ernährung & Meditationsreisen in Trostberg</title>
+<meta name="description" content="Ganzheitliches Coaching in Trostberg: Entspannungscoaching, Ernährungsberatung und Meditationsreisen in die Mongolei. Christine Fehrensen begleitet Dich zurück in Deine innere Balance." />
+<meta name="author" content="Christine Fehrensen" />
+<meta name="theme-color" content="#232E27" />
+<link rel="canonical" href="https://chfehrensen.wixsite.com/fehrensen-coaching" />
+
+<!-- Open Graph / social sharing -->
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:title" content="Fehrensen Coaching · Finde Deine Balance" />
+<meta property="og:description" content="Entspannung, Ernährung und Meditationsreisen in die Mongolei. Ganzheitliches Coaching in Trostberg." />
+<meta property="og:image" content="assets/hero-lake.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+<!-- Structured data: local business -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "Fehrensen Coaching",
+  "description": "Ganzheitliches Coaching: Entspannung, Ernährung und Meditationsreisen.",
+  "founder": "Christine Fehrensen",
+  "telephone": "+4915153737721",
+  "email": "kontakt@fehrensen-coaching.de",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Gabelsbergerstr. 4",
+    "postalCode": "83308",
+    "addressLocality": "Trostberg",
+    "addressCountry": "DE"
+  },
+  "areaServed": "Trostberg, Traunstein, Chiemgau",
+  "knowsAbout": ["Entspannungscoaching", "Ernährungsberatung", "Achtsamkeit", "Meditationsreisen", "Stressbewältigung"]
+}
+</script>
+
+<style>
+/* ============================================================
+   FEHRENSEN COACHING — organic editorial wellness
+   ============================================================ */
+:root{
+  --cream:#F3ECDF;
+  --cream-2:#EBE2D0;
+  --paper:#FAF6EE;
+  --ink:#222C25;
+  --ink-soft:#33413A;
+  --moss:#6E7D60;
+  --moss-light:#9CAA8D;
+  --clay:#BB6F4B;
+  --clay-deep:#9C5839;
+  --gold:#C6993F;
+  --text:#2B312A;
+  --text-soft:#5C6258;
+  --line:rgba(34,44,37,.14);
+  --line-soft:rgba(34,44,37,.08);
+
+  --font-display:'Fraunces',Georgia,'Times New Roman',serif;
+  --font-sans:'Mulish',-apple-system,BlinkMacSystemFont,sans-serif;
+
+  --maxw:1200px;
+  --pad:clamp(1.25rem,5vw,4rem);
+  --r:18px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+body{
+  font-family:var(--font-sans);
+  color:var(--text);
+  background:var(--cream);
+  line-height:1.65;
+  font-weight:400;
+  font-size:clamp(1rem,.96rem + .25vw,1.12rem);
+  letter-spacing:.005em;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* film-grain texture overlay */
+body::before{
+  content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;
+  opacity:.04;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+h1,h2,h3,h4,h5{font-family:var(--font-display);font-weight:500;line-height:1.08;letter-spacing:-.015em;color:var(--ink)}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%;height:auto}
+::selection{background:var(--clay);color:var(--paper)}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+
+/* kicker / eyebrow */
+.kicker{
+  font-size:.74rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--clay-deep);display:inline-flex;align-items:center;gap:.7em;
+}
+.kicker::before{content:"";width:26px;height:1px;background:var(--clay);display:inline-block}
+
+/* buttons */
+.btn{
+  display:inline-flex;align-items:center;gap:.6em;cursor:pointer;border:none;
+  font-family:var(--font-sans);font-weight:600;font-size:.95rem;letter-spacing:.01em;
+  padding:.92em 1.7em;border-radius:100px;transition:all .4s var(--ease);
+  background:var(--ink);color:var(--cream);white-space:nowrap;
+}
+.btn:hover{background:var(--clay-deep);transform:translateY(-2px);box-shadow:0 12px 28px -10px rgba(156,88,57,.55)}
+.btn .arr{transition:transform .4s var(--ease)}
+.btn:hover .arr{transform:translate(3px,-3px)}
+.btn--ghost{background:transparent;color:var(--cream);border:1px solid rgba(243,236,223,.45)}
+.btn--ghost:hover{background:rgba(243,236,223,.12);border-color:var(--cream);box-shadow:none}
+.btn--clay{background:var(--clay)}
+.btn--clay:hover{background:var(--clay-deep)}
+.btn--dark-on-light.btn--ghost{color:var(--ink);border-color:var(--line)}
+.btn--dark-on-light.btn--ghost:hover{background:rgba(34,44,37,.05);border-color:var(--ink)}
+
+/* ================= HEADER ================= */
+.site-head{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:1.1rem var(--pad);transition:all .45s var(--ease);
+}
+.site-head.scrolled{
+  background:rgba(243,236,223,.86);backdrop-filter:blur(14px);
+  padding-top:.7rem;padding-bottom:.7rem;
+  box-shadow:0 1px 0 var(--line-soft);
+}
+.brand{display:flex;align-items:center;gap:.6rem;font-family:var(--font-display);
+  font-size:1.28rem;font-weight:500;letter-spacing:-.01em;color:var(--cream);transition:color .45s var(--ease)}
+.brand .enso{width:24px;height:24px;flex:none;transition:stroke .45s var(--ease)}
+.brand .enso circle{fill:none;stroke:var(--cream);stroke-width:1.6;stroke-linecap:round;stroke-dasharray:60;stroke-dashoffset:6;transition:stroke .45s var(--ease)}
+.brand b{font-weight:600}
+.site-head.scrolled .brand{color:var(--ink)}
+.site-head.scrolled .brand .enso circle{stroke:var(--clay)}
+
+.nav{display:flex;align-items:center;gap:2rem}
+.nav-links{display:flex;gap:1.65rem;list-style:none}
+.nav-links a{
+  font-size:.9rem;font-weight:500;color:var(--cream);position:relative;padding:.2em 0;
+  transition:color .35s var(--ease);opacity:.92;
+}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:1.5px;background:var(--clay);transition:width .35s var(--ease)}
+.nav-links a:hover{opacity:1}
+.nav-links a:hover::after{width:100%}
+.site-head.scrolled .nav-links a{color:var(--ink-soft)}
+.nav-head-cta{font-size:.85rem;padding:.65em 1.3em}
+.site-head.scrolled .nav-head-cta{background:var(--clay)}
+.site-head.scrolled .nav-head-cta:hover{background:var(--clay-deep)}
+
+.menu-toggle{display:none;background:none;border:none;cursor:pointer;width:30px;height:22px;position:relative}
+.menu-toggle span{position:absolute;left:0;width:100%;height:2px;background:var(--cream);border-radius:2px;transition:all .35s var(--ease)}
+.menu-toggle span:nth-child(1){top:0}
+.menu-toggle span:nth-child(2){top:10px}
+.menu-toggle span:nth-child(3){top:20px}
+.site-head.scrolled .menu-toggle span{background:var(--ink)}
+.site-head.open .menu-toggle span{background:var(--ink)}
+.site-head.open .menu-toggle span:nth-child(1){top:10px;transform:rotate(45deg)}
+.site-head.open .menu-toggle span:nth-child(2){opacity:0}
+.site-head.open .menu-toggle span:nth-child(3){top:10px;transform:rotate(-45deg)}
+
+/* ================= HERO ================= */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:var(--cream);isolation:isolate}
+.hero-img{position:absolute;inset:0;z-index:-2;overflow:hidden}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:center 62%;
+  animation:slowzoom 22s ease-out forwards}
+@keyframes slowzoom{from{transform:scale(1.08)}to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:
+    linear-gradient(180deg,rgba(24,33,28,.42) 0%,rgba(24,33,28,.05) 32%,rgba(24,33,28,.45) 78%,rgba(20,28,24,.86) 100%),
+    radial-gradient(120% 80% at 15% 90%,rgba(34,44,37,.55),transparent 60%);
+}
+.hero-inner{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 var(--pad) clamp(3.5rem,7vw,6rem)}
+.hero .kicker{color:#E8C9A8}
+.hero .kicker::before{background:#E8C9A8}
+.hero h1{
+  font-size:clamp(3.2rem,11vw,8.6rem);font-weight:400;line-height:.92;letter-spacing:-.03em;
+  color:var(--cream);margin:.32em 0 .12em;max-width:14ch;
+  text-shadow:0 2px 40px rgba(0,0,0,.25);
+}
+.hero h1 em{font-style:italic;font-weight:400;color:#EAC9A6}
+.hero-lead{font-size:clamp(1.05rem,1rem + .55vw,1.3rem);max-width:46ch;color:rgba(243,236,223,.92);font-weight:400;line-height:1.55}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.1rem}
+.scroll-cue{position:absolute;bottom:1.7rem;left:50%;transform:translateX(-50%);
+  font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;color:rgba(243,236,223,.7);
+  display:flex;flex-direction:column;align-items:center;gap:.6rem}
+.scroll-cue .line{width:1px;height:42px;background:linear-gradient(rgba(243,236,223,.7),transparent);animation:drip 2.2s var(--ease) infinite}
+@keyframes drip{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* hero load anim */
+.hero [data-h]{opacity:0;transform:translateY(26px);animation:rise .9s var(--ease) forwards}
+.hero [data-h="1"]{animation-delay:.15s}
+.hero [data-h="2"]{animation-delay:.32s}
+.hero [data-h="3"]{animation-delay:.5s}
+.hero [data-h="4"]{animation-delay:.68s}
+@keyframes rise{to{opacity:1;transform:none}}
+
+/* ================= PILLAR STRIP ================= */
+.pillars{background:var(--ink);color:var(--cream)}
+.pillars .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;padding-top:0;padding-bottom:0;
+  background:rgba(243,236,223,.12);border-radius:0}
+.pillar{background:var(--ink);padding:clamp(2rem,3.5vw,3rem) clamp(1.3rem,2.5vw,2.2rem);text-align:center}
+.pillar .num{font-family:var(--font-display);font-size:1rem;color:var(--moss-light);font-style:italic}
+.pillar h3{color:var(--cream);font-size:1.45rem;font-weight:500;margin:.5rem 0 .55rem}
+.pillar p{font-size:.95rem;color:rgba(243,236,223,.72);line-height:1.6}
+
+/* ================= SECTION SHELL ================= */
+.section{padding:clamp(4.5rem,9vw,8.5rem) 0;position:relative}
+.section-head{max-width:60ch;margin-bottom:clamp(2.5rem,5vw,4rem)}
+.section-head h2{font-size:clamp(2.2rem,1.6rem + 2.6vw,4rem);margin:.55rem 0 0;font-weight:400}
+.lead{font-size:clamp(1.08rem,1rem + .5vw,1.32rem);color:var(--text-soft);max-width:54ch;margin-top:1.1rem;line-height:1.6}
+
+/* alternating feature blocks */
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,5rem);align-items:center}
+.feature + .feature{margin-top:clamp(4rem,8vw,7rem)}
+.feature.rev .feature-media{order:2}
+.feature-media{position:relative}
+.feature-media .ph{
+  border-radius:var(--r);overflow:hidden;position:relative;aspect-ratio:4/5;
+  box-shadow:0 40px 80px -42px rgba(34,44,37,.5);
+}
+.feature-media img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--ease)}
+.feature-media:hover img{transform:scale(1.045)}
+.feature-media .tag{
+  position:absolute;bottom:1rem;left:1rem;background:var(--paper);color:var(--ink);
+  font-size:.78rem;font-weight:700;letter-spacing:.06em;padding:.5em 1em;border-radius:100px;
+  box-shadow:0 8px 20px -8px rgba(0,0,0,.3)
+}
+.feature-body h3{font-size:clamp(1.7rem,1.3rem + 1.4vw,2.6rem);font-weight:400;margin:.7rem 0 1rem;max-width:18ch}
+.feature-body p{margin-bottom:1.05rem;color:var(--text);max-width:48ch}
+.feature-body p.muted{color:var(--text-soft)}
+
+/* method chips */
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.6rem}
+.chip{display:inline-flex;align-items:center;gap:.5em;font-size:.85rem;font-weight:600;color:var(--ink-soft);
+  background:var(--paper);border:1px solid var(--line);padding:.55em 1.05em;border-radius:100px}
+.chip .dot{width:6px;height:6px;border-radius:50%;background:var(--clay)}
+.feature--moss .chip .dot{background:var(--moss)}
+
+/* divider ornament */
+.ens-divide{display:flex;justify-content:center;padding:clamp(2rem,5vw,3.5rem) 0}
+.ens-divide svg{width:46px;height:46px}
+.ens-divide circle{fill:none;stroke:var(--moss);stroke-width:1.4;stroke-linecap:round;stroke-dasharray:60;stroke-dashoffset:7}
+
+/* ================= MEDITATIONSREISEN (showpiece) ================= */
+.reise{position:relative;color:var(--cream);background:var(--ink);overflow:hidden}
+.reise-bg{position:absolute;inset:0;z-index:0}
+.reise-bg img{width:100%;height:100%;object-fit:cover;object-position:center 70%}
+.reise-bg::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(22,30,26,.62),rgba(22,30,26,.78) 55%,rgba(20,27,23,.96))}
+.reise-top{position:relative;z-index:2;min-height:78vh;display:flex;align-items:flex-end;
+  padding-top:clamp(4rem,9vw,8rem);padding-bottom:clamp(2.5rem,5vw,4rem)}
+.reise-top .kicker{color:#E8C9A8}
+.reise-top .kicker::before{background:#E8C9A8}
+.reise-quote{font-family:var(--font-display);font-weight:400;font-style:italic;
+  font-size:clamp(2rem,1.4rem + 3.4vw,4.4rem);line-height:1.08;letter-spacing:-.02em;
+  color:var(--cream);max-width:20ch;margin-top:1rem;text-shadow:0 2px 40px rgba(0,0,0,.3)}
+.reise-body{position:relative;z-index:2;padding-bottom:clamp(4rem,8vw,7rem)}
+.reise-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,5vw,4.5rem);align-items:start}
+.reise-prose p{color:rgba(243,236,223,.82);margin-bottom:1.1rem;max-width:60ch;line-height:1.72}
+.reise-prose p:first-child::first-letter{
+  font-family:var(--font-display);font-size:3.4em;line-height:.7;float:left;
+  padding:.06em .12em 0 0;color:#E8C9A8;font-weight:500}
+.facts{border-top:1px solid rgba(243,236,223,.22)}
+.fact{display:flex;gap:1rem;padding:1.05rem 0;border-bottom:1px solid rgba(243,236,223,.16)}
+.fact .fi{font-family:var(--font-display);font-style:italic;color:#E8C9A8;font-size:1.1rem;flex:none;width:2.2rem}
+.fact b{display:block;color:var(--cream);font-weight:600;font-size:1rem;margin-bottom:.1rem}
+.fact span{color:rgba(243,236,223,.7);font-size:.9rem;line-height:1.45}
+.reise-cta{margin-top:2rem;display:flex;flex-wrap:wrap;gap:.9rem;align-items:center}
+.reise-note{font-size:.86rem;color:rgba(243,236,223,.6);max-width:40ch}
+
+/* ================= ABOUT ================= */
+.about{background:var(--cream-2)}
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2.2rem,5vw,5rem);align-items:center}
+.about-photo{position:relative}
+.about-photo .ph{border-radius:var(--r);overflow:hidden;aspect-ratio:9/10;box-shadow:0 40px 80px -40px rgba(34,44,37,.45)}
+.about-photo img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.about-photo .badge{position:absolute;right:-14px;bottom:24px;background:var(--clay);color:var(--paper);
+  width:118px;height:118px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;font-family:var(--font-display);line-height:1.1;box-shadow:0 18px 36px -14px rgba(156,88,57,.6);transform:rotate(-6deg)}
+.about-photo .badge b{font-size:1.7rem;font-weight:500}
+.about-photo .badge span{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;font-family:var(--font-sans);font-weight:700;margin-top:.2rem}
+.about-body h2{font-size:clamp(2.2rem,1.6rem + 2.4vw,3.6rem);font-weight:400;margin:.6rem 0 1.2rem}
+.about-body p{margin-bottom:1.1rem;max-width:52ch}
+.pullquote{font-family:var(--font-display);font-style:italic;font-size:clamp(1.3rem,1.1rem + 1vw,1.85rem);
+  line-height:1.32;color:var(--ink);border-left:2px solid var(--clay);padding-left:1.3rem;margin:1.6rem 0;max-width:40ch}
+.creds{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.7rem}
+.cred{font-size:.84rem;font-weight:600;color:var(--moss);background:var(--paper);border:1px solid var(--line);
+  padding:.55em 1.1em;border-radius:8px}
+
+/* ================= PRICES ================= */
+.prices{background:var(--paper)}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:clamp(2rem,4vw,3rem)}
+.price-card{background:var(--cream);border:1px solid var(--line);border-radius:var(--r);padding:2rem 1.8rem;
+  display:flex;flex-direction:column;position:relative;transition:transform .45s var(--ease),box-shadow .45s var(--ease)}
+.price-card:hover{transform:translateY(-6px);box-shadow:0 30px 60px -34px rgba(34,44,37,.4)}
+.price-card .pc-kicker{font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--clay-deep)}
+.price-card h3{font-size:1.4rem;font-weight:500;margin:.5rem 0 .3rem;line-height:1.2}
+.price-card .dur{font-size:.9rem;color:var(--text-soft);margin-bottom:1.3rem}
+.price-card.feat{background:var(--ink);border-color:var(--ink)}
+.price-card.feat h3,.price-card.feat .ribbon{color:var(--cream)}
+.price-card.feat .dur,.price-card.feat .tier span{color:rgba(243,236,223,.7)}
+.price-card.feat .tier{border-color:rgba(243,236,223,.16)}
+.price-card.feat .tier b{color:var(--cream)}
+.price-card.feat .pc-kicker{color:#E8C9A8}
+.ribbon{position:absolute;top:1.4rem;right:1.6rem;font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--moss)}
+.tier{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:.85rem 0;border-top:1px solid var(--line)}
+.tier:last-of-type{border-bottom:1px solid var(--line)}
+.tier span{font-size:.92rem;color:var(--text-soft)}
+.tier b{font-family:var(--font-display);font-size:1.5rem;font-weight:500;color:var(--ink)}
+.price-card .pc-cta{margin-top:auto;padding-top:1.5rem}
+.price-card .pc-cta a{font-size:.88rem;font-weight:700;color:var(--clay-deep);display:inline-flex;gap:.4em;align-items:center}
+.price-card.feat .pc-cta a{color:#E8C9A8}
+.price-card .pc-cta a:hover{gap:.7em}
+.price-note{text-align:center;margin-top:2rem;font-size:.9rem;color:var(--text-soft)}
+
+/* ================= CONTACT / CTA ================= */
+.cta-band{background:var(--moss);color:var(--paper);text-align:center;border-radius:0}
+.cta-band .wrap{padding-top:clamp(4rem,8vw,7rem);padding-bottom:clamp(4rem,8vw,7rem)}
+.cta-band .kicker{color:#F0E6D2;justify-content:center}
+.cta-band .kicker::before{background:#F0E6D2}
+.cta-band h2{color:var(--paper);font-size:clamp(2.2rem,1.6rem + 3vw,4.4rem);font-weight:400;margin:.5rem auto .4rem;max-width:18ch}
+.cta-band p{max-width:46ch;margin:0 auto 2rem;color:rgba(250,246,238,.9)}
+.cta-band .hero-cta{justify-content:center}
+.cta-band .btn{background:var(--paper);color:var(--ink)}
+.cta-band .btn:hover{background:var(--ink);color:var(--cream)}
+.cta-band .btn--ghost{background:transparent;color:var(--paper);border-color:rgba(250,246,238,.5)}
+.cta-band .btn--ghost:hover{background:rgba(250,246,238,.14);color:var(--paper);border-color:var(--paper)}
+
+/* ================= FOOTER ================= */
+.footer{background:var(--ink);color:rgba(243,236,223,.75);padding:clamp(3.5rem,6vw,5rem) 0 2rem}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1.2fr;gap:clamp(2rem,5vw,4rem)}
+.foot-brand{display:flex;align-items:center;gap:.6rem;font-family:var(--font-display);font-size:1.5rem;color:var(--cream);margin-bottom:1rem}
+.foot-brand .enso{width:26px;height:26px}
+.foot-brand .enso circle{fill:none;stroke:var(--clay);stroke-width:1.6;stroke-dasharray:60;stroke-dashoffset:6}
+.foot-about{max-width:34ch;font-size:.95rem;line-height:1.6}
+.foot-col h4{font-family:var(--font-sans);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--moss-light);font-weight:700;margin-bottom:1.1rem}
+.foot-col ul{list-style:none;display:flex;flex-direction:column;gap:.7rem}
+.foot-col a,.foot-col address{font-style:normal;font-size:.96rem;color:rgba(243,236,223,.8);transition:color .3s var(--ease);line-height:1.5}
+.foot-col a:hover{color:var(--clay)}
+.socials{display:flex;gap:.7rem;margin-top:1.3rem}
+.socials a{width:40px;height:40px;border-radius:50%;border:1px solid rgba(243,236,223,.25);
+  display:flex;align-items:center;justify-content:center;transition:all .35s var(--ease)}
+.socials a:hover{background:var(--clay);border-color:var(--clay);transform:translateY(-3px)}
+.socials svg{width:17px;height:17px;fill:var(--cream)}
+.newsletter{margin-top:.4rem}
+.newsletter form{display:flex;gap:.5rem;margin-top:.9rem;max-width:330px}
+.newsletter input{flex:1;background:rgba(243,236,223,.07);border:1px solid rgba(243,236,223,.22);border-radius:100px;
+  padding:.7em 1.1em;color:var(--cream);font-family:var(--font-sans);font-size:.9rem;outline:none;transition:border .3s}
+.newsletter input::placeholder{color:rgba(243,236,223,.5)}
+.newsletter input:focus{border-color:var(--clay)}
+.newsletter button{background:var(--clay);border:none;color:var(--paper);border-radius:100px;padding:.7em 1.2em;cursor:pointer;font-weight:600;font-size:.88rem;transition:background .3s}
+.newsletter button:hover{background:var(--clay-deep)}
+.newsletter .ok{font-size:.85rem;color:var(--moss-light);margin-top:.7rem;display:none}
+.foot-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;align-items:center;
+  margin-top:clamp(2.5rem,5vw,3.5rem);padding-top:1.5rem;border-top:1px solid rgba(243,236,223,.14);font-size:.82rem;color:rgba(243,236,223,.55)}
+.foot-legal{display:flex;flex-wrap:wrap;gap:1.2rem}
+.foot-legal a:hover{color:var(--clay)}
+
+/* ================= reveal ================= */
+[data-reveal]{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+[data-reveal].in{opacity:1;transform:none}
+[data-reveal][data-d="1"]{transition-delay:.1s}
+[data-reveal][data-d="2"]{transition-delay:.2s}
+[data-reveal][data-d="3"]{transition-delay:.3s}
+@media (prefers-reduced-motion:reduce){
+  [data-reveal],.hero [data-h]{opacity:1!important;transform:none!important;animation:none!important}
+  .hero-img img{animation:none}
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width:920px){
+  .nav-links,.nav-head-cta{display:none}
+  .menu-toggle{display:block}
+  .nav.open .nav-links{
+    display:flex;position:fixed;inset:0 0 0 auto;width:min(78vw,320px);height:100vh;
+    background:var(--paper);flex-direction:column;justify-content:center;gap:1.6rem;padding:2rem 2.4rem;
+    box-shadow:-20px 0 60px -20px rgba(0,0,0,.4);z-index:90
+  }
+  .nav.open .nav-links a{color:var(--ink);font-size:1.4rem;font-family:var(--font-display)}
+  .nav.open .nav-head-cta{display:inline-flex;margin-top:1rem}
+  .feature,.feature.rev{grid-template-columns:1fr}
+  .feature.rev .feature-media{order:0}
+  .feature-media .ph{aspect-ratio:16/11}
+  .reise-grid{grid-template-columns:1fr}
+  .about-grid{grid-template-columns:1fr}
+  .about-photo{max-width:380px}
+  .price-grid{grid-template-columns:1fr;max-width:460px}
+  .pillars .wrap{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  .foot-grid{grid-template-columns:1fr}
+  .hero-cta .btn{flex:1;justify-content:center}
+  .about-photo .badge{width:96px;height:96px}
+}
+
+/* ================= CONTACT FORM ================= */
+.contact-head{text-align:center;max-width:48ch;margin:0 auto 2.4rem}
+.cta-band .contact-head .kicker{justify-content:center}
+.contact-form{max-width:600px;margin:0 auto;background:var(--paper);color:var(--text);text-align:left;
+  border-radius:var(--r);padding:clamp(1.5rem,3vw,2.4rem);box-shadow:0 44px 90px -48px rgba(18,26,20,.55)}
+.cf-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.cf-field{display:flex;flex-direction:column;margin-bottom:1.1rem}
+.cf-field label{font-size:.78rem;font-weight:700;letter-spacing:.05em;color:var(--ink-soft);margin-bottom:.45rem}
+.contact-form input,.contact-form select,.contact-form textarea{width:100%;font-family:var(--font-sans);
+  font-size:1rem;color:var(--text);background:var(--cream);border:1px solid var(--line);border-radius:10px;
+  padding:.8em 1em;outline:none;transition:border-color .25s var(--ease),box-shadow .25s var(--ease)}
+.contact-form textarea{resize:vertical;min-height:104px;line-height:1.55}
+.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{border-color:var(--clay);box-shadow:0 0 0 3px rgba(187,111,75,.15)}
+.contact-form select{appearance:none;-webkit-appearance:none;cursor:pointer;padding-right:2.6em;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='none' stroke='%239C5839' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M3 5l4 4 4-4'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 1.05em center}
+.contact-form .cf-submit{width:100%;justify-content:center;margin-top:.5rem;background:var(--clay);color:var(--paper)}
+.contact-form .cf-submit:hover{background:var(--clay-deep);color:var(--paper)}
+.cf-ok{display:none;font-size:.9rem;color:var(--moss);text-align:center;margin-top:1rem;font-weight:600}
+.cf-alt{font-size:.86rem;color:var(--text-soft);text-align:center;margin-top:1.2rem}
+.cf-alt a{color:var(--clay-deep);font-weight:600}
+@media (max-width:560px){.cf-row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-head" id="head">
+  <a href="#top" class="brand" aria-label="Fehrensen Coaching Startseite">
+    <svg class="enso" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" transform="rotate(120 12 12)"/></svg>
+    <span>Fehrensen<b> Coaching</b></span>
+  </a>
+  <nav class="nav" id="nav" aria-label="Hauptnavigation">
+    <ul class="nav-links">
+      <li><a href="#entspannung">Entspannung</a></li>
+      <li><a href="#ernaehrung">Ernährung</a></li>
+      <li><a href="#reisen">Meditationsreisen</a></li>
+      <li><a href="#ueber">Über mich</a></li>
+      <li><a href="#preise">Preise</a></li>
+    </ul>
+    <a class="btn nav-head-cta" href="mailto:kontakt@fehrensen-coaching.de?subject=Terminanfrage%20Coaching">Termin buchen</a>
+  </nav>
+  <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-img">
+    <img src="assets/hero-lake.jpg" alt="Nebel über einem stillen Waldsee im Morgenlicht bei Trostberg" fetchpriority="high" />
+  </div>
+  <div class="hero-inner">
+    <span class="kicker" data-h="1">Ganzheitliches Coaching · Trostberg</span>
+    <h1 data-h="2">Finde Deine <em>Balance</em></h1>
+    <p class="hero-lead" data-h="3">Die Gründe für Stress sind so vielseitig und individuell wie die Formen, in denen er sich zeigt. Gemeinsam finden wir die Auslöser und die Methoden, die Dich zurück in Deine innere Balance bringen.</p>
+    <div class="hero-cta" data-h="4">
+      <a class="btn btn--clay" href="mailto:kontakt@fehrensen-coaching.de?subject=Terminanfrage%20Coaching">Termin buchen <span class="arr">↗</span></a>
+      <a class="btn btn--ghost" href="#entspannung">Angebote entdecken</a>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"><span class="line"></span>Scroll</div>
+</section>
+
+<!-- ============ PILLARS ============ -->
+<section class="pillars">
+  <div class="wrap">
+    <div class="pillar" data-reveal data-d="1">
+      <span class="num">i.</span>
+      <h3>Entspannung</h3>
+      <p>Atem, Achtsamkeit und Traumreisen, die Stress lösen und sich leicht in den Alltag integrieren lassen.</p>
+    </div>
+    <div class="pillar" data-reveal data-d="2">
+      <span class="num">ii.</span>
+      <h3>Ernährung</h3>
+      <p>Ein ganzheitlicher Blick auf Essen, Verdauung, Bewegung und Schlaf. In kleinen, machbaren Schritten.</p>
+    </div>
+    <div class="pillar" data-reveal data-d="3">
+      <span class="num">iii.</span>
+      <h3>Meditationsreisen</h3>
+      <p>14 Tage in der Stille der mongolischen Steppe, zurück zum Ursprung Deiner Achtsamkeit.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENTSPANNUNG ============ -->
+<section class="section" id="entspannung">
+  <div class="wrap">
+    <div class="feature feature--clay">
+      <div class="feature-media" data-reveal>
+        <div class="ph"><img src="assets/forest.jpg" alt="Blick nach oben in das grüne Blätterdach eines Buchenwaldes" loading="lazy" /></div>
+        <span class="tag">Waldbaden</span>
+      </div>
+      <div class="feature-body" data-reveal data-d="1">
+        <span class="kicker">01 — Entspannung</span>
+        <h3>Zur Ruhe kommen, im Alltag wie im Ausnahmezustand</h3>
+        <p>In meiner Praxis in Trostberg biete ich unterschiedliche Entspannungsmethoden an. Angefangen von Atem- und Achtsamkeitsübungen über Meditationen im Sitzen oder in Bewegung, bis hin zu individuell zugeschnittenen Traumreisen. Alle Methoden sind leicht erlernbar und gut in den Alltag zu integrieren. Als besonderen Service erhältst Du Deine persönliche Traumreise als Audiofile, damit Du sie Dir immer wieder anhören kannst.</p>
+        <p class="muted">Ein weiteres Angebot ist das gemeinsame „Waldbaden“. Es eignet sich nicht nur hervorragend zum Entspannen, sondern ist auch eine wertvolle Maßnahme, wenn es darum geht, die Nährstoffaufnahme und die Funktion des Verdauungstrakts zu verbessern.</p>
+        <p>So lernst Du, in akuten Stresssituationen einen kühlen Kopf zu behalten und langfristig entspannter und zufriedener durchs Leben zu gehen.</p>
+        <div class="chips">
+          <span class="chip"><span class="dot"></span>Atem- &amp; Achtsamkeitsübungen</span>
+          <span class="chip"><span class="dot"></span>Meditation im Sitzen &amp; in Bewegung</span>
+          <span class="chip"><span class="dot"></span>Traumreise als Audiofile</span>
+          <span class="chip"><span class="dot"></span>Waldbaden</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ens-divide" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" transform="rotate(120 12 12)"/></svg></div>
+
+<!-- ============ ERNÄHRUNG ============ -->
+<section class="section" id="ernaehrung" style="padding-top:clamp(2rem,4vw,3rem)">
+  <div class="wrap">
+    <div class="feature feature--moss rev">
+      <div class="feature-media" data-reveal>
+        <div class="ph"><img src="assets/spices.jpg" alt="Vier Löffel mit bunten Gewürzen auf dunklem Stein" loading="lazy" /></div>
+        <span class="tag">Ernährung</span>
+      </div>
+      <div class="feature-body" data-reveal data-d="1">
+        <span class="kicker">02 — Ernährung</span>
+        <h3>Optimal genährt, Schritt für Schritt</h3>
+        <p>Unter Ernährung verstehe ich nicht nur den bloßen Akt des Essens. Mir ist es wichtig, dass dieses komplexe Thema aus allen notwendigen Blickwinkeln betrachtet wird, um am Ende optimal genährt zu sein.</p>
+        <p class="muted">Da die Nahrungsaufnahme in erster Linie ein Verhalten ist und nicht bloß eine Tätigkeit, lässt sie sich nicht von jetzt auf gleich grundlegend ändern. Für einen nachhaltigen Effekt gehen wir die nötigen Änderungen in kleinen, machbaren Schritten an.</p>
+        <p>Selbstverständlich ist die richtige Auswahl an Lebensmitteln entscheidend. Genauso zählen ein gut funktionierender Verdauungstrakt, ausreichend Bewegung, erholsamer Schlaf und eine entspannte Grundhaltung. Gemeinsam erfassen wir den aktuellen Stand und erarbeiten eine Strategie, um Dein Ziel mit Freude und Motivation zu erreichen.</p>
+        <div class="chips">
+          <span class="chip"><span class="dot"></span>Lebensmittelauswahl</span>
+          <span class="chip"><span class="dot"></span>Verdauung</span>
+          <span class="chip"><span class="dot"></span>Bewegung &amp; Schlaf</span>
+          <span class="chip"><span class="dot"></span>Innere Haltung</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MEDITATIONSREISEN ============ -->
+<section class="reise" id="reisen">
+  <div class="reise-bg"><img src="assets/mongolia.jpg" alt="Pferd in der weiten mongolischen Steppe vor schneebedeckten Bergen in der Abenddämmerung" loading="lazy" /></div>
+  <div class="wrap reise-top">
+    <div data-reveal>
+      <span class="kicker">03 — Meditationsreisen</span>
+      <p class="reise-quote">Erlebe die absolute Stille der mongolischen Steppe und finde zurück zum Ursprung.</p>
+    </div>
+  </div>
+  <div class="wrap reise-body">
+    <div class="reise-grid">
+      <div class="reise-prose" data-reveal>
+        <p>Retreats liegen im Trend, an den unterschiedlichsten Orten der Welt. Ihnen allen gemeinsam ist der Wunsch, sich für eine Weile fernab vom Alltag ganz auf sich selbst zu konzentrieren.</p>
+        <p>Als ich 2025 zum ersten Mal in die Mongolei reiste, war ich vom ersten Moment an von der Magie der Weite und dem Klang der Stille verzaubert. Die atemberaubende Natur bietet die perfekte Gelegenheit, vollständig bei sich selbst anzukommen. Gemeinsam bereisen wir 14 Tage lang die Zentral- und Nordmongolei, begleitet von einem professionellen Fahrer und einem deutschsprachigen Reiseleiter, der vor Ort alle organisatorischen Angelegenheiten übernimmt.</p>
+        <p>Jeder Zwischenstopp eignet sich perfekt für unsere Meditations- und Achtsamkeitseinheiten, die wir jeden Morgen vor dem gemeinsamen Frühstück durchführen. Ob in der Nähe eines verlassenen Klosters, an einem imposanten Wasserfall oder am Ufer eines Sees, jeder Ort hat seine eigene Energie. Als besonderes Highlight bieten wir gemeinsame Meditationen mit einem buddhistischen Mönch oder ein Treffen mit einem Schamanen an. Die Einheiten sind immer freiwillig, jeder regeneriert Körper und Geist nach seinen eigenen Vorstellungen.</p>
+        <p>Während man sich ohne äußere Ablenkungen mit sich selbst beschäftigt, können alte, tief ins Unterbewusstsein verdrängte Themen wieder zum Vorschein kommen. Tagsüber stehe ich jedem für Einzelgespräche zur Verfügung, abends reflektieren wir gemeinsam in der Gruppe den Tag. Vor Reiseantritt findet ein Gespräch über Zoom statt, in dem alle Details besprochen werden.</p>
+      </div>
+      <aside data-reveal data-d="1">
+        <div class="facts">
+          <div class="fact"><span class="fi">01</span><div><b>14 Tage Reise</b><span>Zentral- und Nordmongolei, professionell organisiert von Odkha Travel</span></div></div>
+          <div class="fact"><span class="fi">02</span><div><b>Tägliche Meditation</b><span>Achtsamkeitseinheiten jeden Morgen vor dem Frühstück</span></div></div>
+          <div class="fact"><span class="fi">03</span><div><b>Mönche &amp; Schamane treffen</b><span>Gemeinsame Meditation mit einem buddhistischen Mönch, Treffen mit einem Schamanen</span></div></div>
+          <div class="fact"><span class="fi">04</span><div><b>Übernachtung in der Natur</b><span>Hotels, Jurten-Camps und Zelte in wilder Natur</span></div></div>
+          <div class="fact"><span class="fi">05</span><div><b>Vollverpflegung</b><span>Drei Mahlzeiten pro Tag, plus persönliches Reisetagebuch</span></div></div>
+        </div>
+        <div class="reise-cta">
+          <a class="btn btn--clay" href="mailto:kontakt@fehrensen-coaching.de?subject=Anfrage%20Meditationsreise%20Mongolei">Reise anfragen <span class="arr">↗</span></a>
+        </div>
+        <p class="reise-note" style="margin-top:1.1rem">Genaue Informationen zum Ablauf und zur Buchung erhältst Du gern auf Anfrage.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="ueber">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-photo" data-reveal>
+        <div class="ph"><img src="assets/portrait.jpg" alt="Porträt von Christine Fehrensen, Coach für Entspannung und Ernährung" loading="lazy" /></div>
+      </div>
+      <div class="about-body" data-reveal data-d="1">
+        <span class="kicker">Über mich</span>
+        <h2>Christine Fehrensen</h2>
+        <p>Mit meinen Ausbildungen zum Entspannungs- und Ernährungscoach sowie zur psychologischen Beraterin möchte ich meinen Klienten helfen, zurück zur inneren Balance zu finden.</p>
+        <blockquote class="pullquote">Ich bin davon überzeugt, dass sich einseitige Ernährung und Stress gegenseitig bedingen.</blockquote>
+        <p>Daher lohnt es sich, jedes Anliegen aus verschiedenen Blickwinkeln zu betrachten, um den für Dich passenden Lösungsweg zu finden. Zusätzlich biete ich einzigartige Meditationsreisen in die Mongolei an, wo Du nicht nur die atemberaubende Natur genießen, sondern auch tiefere Einsichten in Deine eigene Achtsamkeit gewinnen kannst. Gemeinsam finden wir den Weg zu Deinem inneren Gleichgewicht.</p>
+        <div class="creds">
+          <span class="cred">Entspannungscoach</span>
+          <span class="cred">Ernährungscoach</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PREISE ============ -->
+<section class="section prices" id="preise">
+  <div class="wrap">
+    <div class="section-head" data-reveal style="margin-left:auto;margin-right:auto;text-align:center">
+      <span class="kicker" style="justify-content:center">Preise &amp; Dienstleistungen</span>
+      <h2>Transparente Preise, individuell auf Dich abgestimmt</h2>
+    </div>
+    <div class="price-grid">
+      <div class="price-card" data-reveal data-d="1">
+        <span class="pc-kicker">Einzelcoaching</span>
+        <h3>Entspannungscoaching</h3>
+        <p class="dur">60 Minuten</p>
+        <div class="tier"><span>Kinder &amp; Jugendliche bis 18 J.</span><b>50 €</b></div>
+        <div class="tier"><span>Erwachsene</span><b>75 €</b></div>
+        <div class="pc-cta"><a href="mailto:kontakt@fehrensen-coaching.de?subject=Terminanfrage%20Entspannungscoaching">Termin anfragen →</a></div>
+      </div>
+      <div class="price-card" data-reveal data-d="2">
+        <span class="pc-kicker">Einzelcoaching</span>
+        <h3>Ernährungsberatung</h3>
+        <p class="dur">60 Minuten</p>
+        <div class="tier"><span>Kinder &amp; Jugendliche bis 18 J.</span><b>50 €</b></div>
+        <div class="tier"><span>Erwachsene</span><b>75 €</b></div>
+        <div class="pc-cta"><a href="mailto:kontakt@fehrensen-coaching.de?subject=Terminanfrage%20Ern%C3%A4hrungsberatung">Termin anfragen →</a></div>
+      </div>
+      <div class="price-card feat" data-reveal data-d="3">
+        <span class="ribbon">Für Jugendliche</span>
+        <span class="pc-kicker">Gruppencoaching</span>
+        <h3>Keine Angst vor der Abschlussprüfung</h3>
+        <p class="dur">120 Minuten · 3 bis 6 Teilnehmende</p>
+        <div class="tier"><span>pro Person</span><b>30 €</b></div>
+        <div class="pc-cta"><a href="mailto:kontakt@fehrensen-coaching.de?subject=Anfrage%20Gruppencoaching%20Abschlusspr%C3%BCfung">Gruppe anfragen →</a></div>
+      </div>
+    </div>
+    <p class="price-note">Du bist Dir nicht sicher, welches Angebot zu Dir passt? Schreib mir einfach, wir finden es gemeinsam heraus.</p>
+  </div>
+</section>
+
+<!-- ============ CTA BAND ============ -->
+<section class="cta-band" id="kontakt">
+  <div class="wrap">
+    <div class="contact-head">
+      <span class="kicker" data-reveal>Bereit für den ersten Schritt?</span>
+      <h2 data-reveal data-d="1">Lass uns Deine Balance gemeinsam finden</h2>
+      <p data-reveal data-d="1">Erzähl mir kurz, worum es geht und wann es Dir passt. Ich melde mich persönlich bei Dir.</p>
+    </div>
+    <form class="contact-form" id="contactForm" data-reveal data-d="2" novalidate>
+      <div class="cf-row">
+        <div class="cf-field">
+          <label for="cf-name">Name</label>
+          <input id="cf-name" name="name" type="text" autocomplete="name" placeholder="Dein Name" required />
+        </div>
+        <div class="cf-field">
+          <label for="cf-email">E-Mail</label>
+          <input id="cf-email" name="email" type="email" autocomplete="email" placeholder="name@beispiel.de" required />
+        </div>
+      </div>
+      <div class="cf-field">
+        <label for="cf-topic">Anliegen</label>
+        <select id="cf-topic" name="topic">
+          <option>Entspannungscoaching</option>
+          <option>Ernährungsberatung</option>
+          <option>Gruppencoaching „Keine Angst vor der Abschlussprüfung“</option>
+          <option>Meditationsreise Mongolei</option>
+          <option>Allgemeine Anfrage</option>
+        </select>
+      </div>
+      <div class="cf-field">
+        <label for="cf-msg">Nachricht</label>
+        <textarea id="cf-msg" name="message" rows="4" placeholder="Worum geht es? Was möchtest Du erreichen?"></textarea>
+      </div>
+      <button type="submit" class="btn cf-submit">Nachricht senden <span class="arr">↗</span></button>
+      <p class="cf-ok" id="cfOk">Danke! Dein E-Mail-Programm öffnet sich mit Deiner Nachricht. Bitte dort auf „Senden“ klicken.</p>
+      <p class="cf-alt">Lieber direkt? <a href="tel:+4915153737721">+49 (0) 1515 3737721</a> · <a href="mailto:kontakt@fehrensen-coaching.de">kontakt@fehrensen-coaching.de</a></p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <div class="foot-brand">
+          <svg class="enso" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" transform="rotate(120 12 12)"/></svg>
+          Fehrensen Coaching
+        </div>
+        <p class="foot-about">Ganzheitliches Coaching für Entspannung, Ernährung und Achtsamkeit. Zurück zu Deiner inneren Balance, in Trostberg und in der Weite der Mongolei.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 01-1.38-.9 3.7 3.7 0 01-.9-1.38c-.16-.43-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 1.62c-3.15 0-3.5.01-4.74.07-1.14.05-1.76.24-2.17.4-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.16.41-.35 1.03-.4 2.17-.06 1.24-.07 1.59-.07 4.74s.01 3.5.07 4.74c.05 1.14.24 1.76.4 2.17.21.55.47.94.88 1.35.41.41.8.67 1.35.88.41.16 1.03.35 2.17.4 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c1.14-.05 1.76-.24 2.17-.4.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.16-.41.35-1.03.4-2.17.06-1.24.07-1.59.07-4.74s-.01-3.5-.07-4.74c-.05-1.14-.24-1.76-.4-2.17a3.6 3.6 0 00-.88-1.35 3.6 3.6 0 00-1.35-.88c-.41-.16-1.03-.35-2.17-.4-1.24-.06-1.59-.07-4.74-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.65-2.9a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Angebote</h4>
+        <ul>
+          <li><a href="#entspannung">Entspannungscoaching</a></li>
+          <li><a href="#ernaehrung">Ernährungsberatung</a></li>
+          <li><a href="#reisen">Meditationsreisen Mongolei</a></li>
+          <li><a href="#preise">Preise &amp; Gruppencoaching</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="tel:+4915153737721">+49 (0) 1515 3737721</a></li>
+          <li><a href="mailto:kontakt@fehrensen-coaching.de">kontakt@fehrensen-coaching.de</a></li>
+          <li><address>Gabelsbergerstr. 4<br />83308 Trostberg</address></li>
+        </ul>
+        <div class="newsletter">
+          <h4 style="margin-top:1.6rem">Newsletter</h4>
+          <form id="nlForm">
+            <input type="email" placeholder="Deine E-Mail-Adresse" aria-label="E-Mail-Adresse" required />
+            <button type="submit">Abonnieren</button>
+          </form>
+          <p class="ok" id="nlOk">Danke, ich melde mich bei Dir.</p>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Fehrensen Coaching · Trostberg</span>
+      <div class="foot-legal">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutzerklärung</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// header scroll state
+const head=document.getElementById('head');
+const onScroll=()=>head.classList.toggle('scrolled',window.scrollY>40);
+onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+
+// mobile menu
+const nav=document.getElementById('nav');
+const toggle=document.getElementById('menuToggle');
+toggle.addEventListener('click',()=>{
+  const open=nav.classList.toggle('open');
+  head.classList.toggle('open',open);
+  toggle.setAttribute('aria-expanded',open);
+});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  nav.classList.remove('open');head.classList.remove('open');toggle.setAttribute('aria-expanded',false);
+}));
+
+// scroll reveal
+const io=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+},{threshold:.16,rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('[data-reveal]').forEach(el=>io.observe(el));
+
+// newsletter (graceful, no backend)
+const nl=document.getElementById('nlForm');
+nl.addEventListener('submit',e=>{e.preventDefault();nl.reset();document.getElementById('nlOk').style.display='block';});
+
+// contact form -> opens email pre-filled to Christine (no backend needed)
+const cf=document.getElementById('contactForm');
+if(cf){cf.addEventListener('submit',function(e){
+  e.preventDefault();
+  const name=cf.querySelector('#cf-name').value.trim();
+  const email=cf.querySelector('#cf-email').value.trim();
+  if(!name||!email){[cf.querySelector('#cf-name'),cf.querySelector('#cf-email')].forEach(i=>{if(!i.value.trim())i.style.borderColor='var(--clay)';});return;}
+  const topic=cf.querySelector('#cf-topic').value;
+  const msg=cf.querySelector('#cf-msg').value.trim();
+  const subject='Anfrage: '+topic;
+  const body='Name: '+name+'\nE-Mail: '+email+'\nAnliegen: '+topic+'\n\n'+(msg||'(keine Nachricht)');
+  window.location.href='mailto:kontakt@fehrensen-coaching.de?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+  document.getElementById('cfOk').style.display='block';
+});}
+</script>
+</body>
+</html>
