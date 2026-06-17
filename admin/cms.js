@@ -104,6 +104,16 @@ function render(schema) {
   }
 }
 
+let toastTimer;
+function showToast(msg) {
+  const t = $('toast');
+  if (!t) return;
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 6000);
+}
+
 async function save() {
   $('save').disabled = true;
   $('status').textContent = 'Speichert …';
@@ -114,7 +124,8 @@ async function save() {
   });
   if (r.ok) {
     dirty = false;
-    $('status').textContent = 'Gespeichert. Die Website wird in 1–2 Minuten aktualisiert.';
+    $('status').textContent = 'Gespeichert.';
+    showToast('Erfolgreich gespeichert. Die Änderungen sind in etwa einer Minute sichtbar.');
   } else {
     $('save').disabled = false;
     $('status').textContent = 'Fehler beim Speichern (' + r.status + ').';

@@ -35,6 +35,11 @@ button.save:hover{background:var(--clay-deep)}
 button.save:disabled{opacity:.55;cursor:default}
 .note{max-width:760px;margin:0 auto;padding:0 clamp(1rem,4vw,2rem);color:var(--muted);font-size:.85rem}
 .loading{padding:3rem;text-align:center;color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:84px;transform:translate(-50%,16px);background:#3a6b53;color:#fff;
+  padding:.85em 1.4em;border-radius:10px;font-size:.92rem;font-weight:500;line-height:1.4;text-align:center;
+  box-shadow:0 14px 34px -12px rgba(0,0,0,.45);opacity:0;pointer-events:none;max-width:90vw;z-index:30;
+  transition:opacity .3s ease,transform .3s ease}
+.toast.show{opacity:1;transform:translate(-50%,0)}
 </style>
 </head>
 <body>
@@ -52,6 +57,7 @@ button.save:disabled{opacity:.55;cursor:default}
   <span class="status" id="status">Änderungen werden als Commit gespeichert und die Website neu veröffentlicht.</span>
   <button class="save" id="save" disabled>Speichern &amp; veröffentlichen</button>
 </div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
 <script type="module" src="./cms.js"></script>
 </body>
 </html>
