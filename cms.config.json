@@ -1,0 +1,7 @@
+{
+  "srcDir": "src",
+  "outDir": "dist",
+  "contentFile": "content.json",
+  "tokenPrefix": "cms:",
+  "passthrough": ["assets", "admin"]
+}

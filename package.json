@@ -1,0 +1,8 @@
+{
+  "name": "fehrensen-coaching",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node cms/build.mjs"
+  }
+}

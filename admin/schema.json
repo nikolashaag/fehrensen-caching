@@ -1,0 +1,38 @@
+{
+  "title": "Fehrensen Coaching",
+  "groups": [
+    {
+      "label": "Startseite (Hero)",
+      "fields": [
+        { "key": "hero.eyebrow", "label": "Eyebrow (kleine Zeile oben)", "type": "text" },
+        { "key": "hero.headline", "label": "Überschrift", "type": "text" },
+        { "key": "hero.headlineEm", "label": "Überschrift, hervorgehobenes Wort", "type": "text" },
+        { "key": "hero.lead", "label": "Einleitungstext", "type": "textarea" }
+      ]
+    },
+    {
+      "label": "Meine Praxis",
+      "fields": [
+        { "key": "praxis.heading", "label": "Überschrift", "type": "text" },
+        { "key": "praxis.text", "label": "Text", "type": "textarea" },
+        { "key": "praxis.address", "label": "Adresse", "type": "text" },
+        { "key": "praxis.image", "label": "Bild", "type": "image" }
+      ]
+    },
+    {
+      "label": "Über mich",
+      "fields": [
+        { "key": "about.name", "label": "Name", "type": "text" },
+        { "key": "about.intro", "label": "Einleitung", "type": "textarea" },
+        { "key": "about.pullquote", "label": "Zitat", "type": "textarea" }
+      ]
+    },
+    {
+      "label": "Kontakt",
+      "fields": [
+        { "key": "contact.heading", "label": "Überschrift", "type": "text" },
+        { "key": "contact.text", "label": "Text", "type": "textarea" }
+      ]
+    }
+  ]
+}

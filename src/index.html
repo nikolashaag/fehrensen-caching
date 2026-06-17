@@ -497,9 +497,9 @@ h1,h2,h3,h4,h5{font-weight:400;letter-spacing:-.01em}
     <img src="assets/hero-lake.jpg" alt="Nebel über einem stillen Waldsee im Morgenlicht bei Trostberg" fetchpriority="high" />
   </div>
   <div class="hero-inner">
-    <span class="kicker" data-h="1">Ganzheitliches Coaching · Trostberg</span>
-    <h1 data-h="2">Finde Deine <em>Balance</em></h1>
-    <p class="hero-lead" data-h="3">Die Gründe für Stress sind so vielseitig und individuell wie die Formen, in denen er sich zeigt. Gemeinsam finden wir die Auslöser und die Methoden, die Dich zurück in Deine innere Balance bringen.</p>
+    <span class="kicker" data-h="1">{{cms:hero.eyebrow}}</span>
+    <h1 data-h="2">{{cms:hero.headline}} <em>{{cms:hero.headlineEm}}</em></h1>
+    <p class="hero-lead" data-h="3">{{cms:hero.lead}}</p>
     <div class="hero-cta" data-h="4">
       <a class="btn btn--clay" href="#kontakt">Termin buchen <span class="arr">↗</span></a>
       <a class="btn btn--ghost" href="#entspannung">Angebote entdecken</a>
@@ -626,9 +626,9 @@ h1,h2,h3,h4,h5{font-weight:400;letter-spacing:-.01em}
       </div>
       <div class="about-body" data-reveal data-d="1">
         <span class="kicker">Über mich</span>
-        <h2>Christine Fehrensen</h2>
-        <p>Mit meinen Ausbildungen zum Entspannungs- und Ernährungscoach sowie zur psychologischen Beraterin möchte ich meinen Klienten helfen, zurück zur inneren Balance zu finden.</p>
-        <blockquote class="pullquote">Ich bin davon überzeugt, dass sich einseitige Ernährung und Stress gegenseitig bedingen.</blockquote>
+        <h2>{{cms:about.name}}</h2>
+        <p>{{cms:about.intro}}</p>
+        <blockquote class="pullquote">{{cms:about.pullquote}}</blockquote>
         <p>Daher lohnt es sich, jedes Anliegen aus verschiedenen Blickwinkeln zu betrachten, um den für Dich passenden Lösungsweg zu finden. Zusätzlich biete ich einzigartige Meditationsreisen in die Mongolei an, wo Du nicht nur die atemberaubende Natur genießen, sondern auch tiefere Einsichten in Deine eigene Achtsamkeit gewinnen kannst. Gemeinsam finden wir den Weg zu Deinem inneren Gleichgewicht.</p>
         <div class="creds">
           <span class="cred">Entspannungscoach</span>
@@ -641,13 +641,13 @@ h1,h2,h3,h4,h5{font-weight:400;letter-spacing:-.01em}
 
 <!-- ============ PRAXIS ============ -->
 <section class="praxis" id="praxis">
-  <img class="praxis-img" src="assets/practice.jpg" alt="Praxisraum von Fehrensen Coaching in Trostberg mit zwei Sesseln, Pflanzen und viel Tageslicht" loading="lazy" />
+  <img class="praxis-img" src="{{cms:praxis.image}}" alt="Praxisraum von Fehrensen Coaching in Trostberg mit zwei Sesseln, Pflanzen und viel Tageslicht" loading="lazy" />
   <div class="praxis-cap"><div class="inner">
     <div class="praxis-card" data-reveal>
       <span class="kicker">Meine Praxis</span>
-      <h3>Ein Ort zum Ankommen, mitten in Trostberg</h3>
-      <p>Zwei bequeme Sessel, viel Tageslicht und eine ruhige, persönliche Atmosphäre. Hier nehmen wir uns in aller Ruhe Zeit für Dich.</p>
-      <p class="addr">Gabelsbergerstr. 4 · 83308 Trostberg</p>
+      <h3>{{cms:praxis.heading}}</h3>
+      <p>{{cms:praxis.text}}</p>
+      <p class="addr">{{cms:praxis.address}}</p>
     </div>
   </div></div>
 </section>
@@ -694,8 +694,8 @@ h1,h2,h3,h4,h5{font-weight:400;letter-spacing:-.01em}
   <div class="wrap">
     <div class="contact-head">
       <span class="kicker" data-reveal>Bereit für den ersten Schritt?</span>
-      <h2 data-reveal data-d="1">Lass uns Deine Balance gemeinsam finden</h2>
-      <p data-reveal data-d="1">Erzähl mir kurz, worum es geht und wann es Dir passt. Ich melde mich persönlich bei Dir.</p>
+      <h2 data-reveal data-d="1">{{cms:contact.heading}}</h2>
+      <p data-reveal data-d="1">{{cms:contact.text}}</p>
     </div>
     <form class="contact-form" id="contactForm" data-reveal data-d="2" novalidate>
       <div class="cf-row">
