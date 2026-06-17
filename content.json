@@ -14,10 +14,64 @@
   "about": {
     "name": "Christine Fehrensen",
     "intro": "Mit meinen Ausbildungen zum Entspannungs- und Ernährungscoach sowie zur psychologischen Beraterin möchte ich meinen Klienten helfen, zurück zur inneren Balance zu finden.",
-    "pullquote": "Ich bin davon überzeugt, dass sich einseitige Ernährung und Stress gegenseitig bedingen."
+    "pullquote": "Ich bin davon überzeugt, dass sich einseitige Ernährung und Stress gegenseitig bedingen.",
+    "body": "Daher lohnt es sich, jedes Anliegen aus verschiedenen Blickwinkeln zu betrachten, um den für Dich passenden Lösungsweg zu finden. Zusätzlich biete ich einzigartige Meditationsreisen in die Mongolei an, wo Du nicht nur die atemberaubende Natur genießen, sondern auch tiefere Einsichten in Deine eigene Achtsamkeit gewinnen kannst. Gemeinsam finden wir den Weg zu Deinem inneren Gleichgewicht."
   },
   "contact": {
     "heading": "Lass uns Deine Balance gemeinsam finden",
     "text": "Erzähl mir kurz, worum es geht und wann es Dir passt. Ich melde mich persönlich bei Dir."
+  },
+  "pillars": {
+    "title1": "Entspannung",
+    "text1": "Atem, Achtsamkeit und Traumreisen, die Stress lösen und sich leicht in den Alltag integrieren lassen.",
+    "title2": "Ernährung",
+    "text2": "Ein ganzheitlicher Blick auf Essen, Verdauung, Bewegung und Schlaf. In kleinen, machbaren Schritten.",
+    "title3": "Meditationsreisen",
+    "text3": "14 Tage in der Stille der mongolischen Steppe, zurück zum Ursprung Deiner Achtsamkeit."
+  },
+  "entspannung": {
+    "heading": "Zur Ruhe kommen, im Alltag wie im Ausnahmezustand",
+    "p1": "In meiner Praxis in Trostberg biete ich unterschiedliche Entspannungsmethoden an. Angefangen von Atem- und Achtsamkeitsübungen über Meditationen im Sitzen oder in Bewegung, bis hin zu individuell zugeschnittenen Traumreisen. Alle Methoden sind leicht erlernbar und gut in den Alltag zu integrieren. Als besonderen Service erhältst Du Deine persönliche Traumreise als Audiofile, damit Du sie Dir immer wieder anhören kannst.",
+    "p2": "Ein weiteres Angebot ist das gemeinsame „Waldbaden“. Es eignet sich nicht nur hervorragend zum Entspannen, sondern ist auch eine wertvolle Maßnahme, wenn es darum geht, die Nährstoffaufnahme und die Funktion des Verdauungstrakts zu verbessern.",
+    "p3": "So lernst Du, in akuten Stresssituationen einen kühlen Kopf zu behalten und langfristig entspannter und zufriedener durchs Leben zu gehen."
+  },
+  "ernaehrung": {
+    "heading": "Optimal genährt, Schritt für Schritt",
+    "p1": "Unter Ernährung verstehe ich nicht nur den bloßen Akt des Essens. Mir ist es wichtig, dass dieses komplexe Thema aus allen notwendigen Blickwinkeln betrachtet wird, um am Ende optimal genährt zu sein.",
+    "p2": "Da die Nahrungsaufnahme in erster Linie ein Verhalten ist und nicht bloß eine Tätigkeit, lässt sie sich nicht von jetzt auf gleich grundlegend ändern. Für einen nachhaltigen Effekt gehen wir die nötigen Änderungen in kleinen, machbaren Schritten an.",
+    "p3": "Selbstverständlich ist die richtige Auswahl an Lebensmitteln entscheidend. Genauso zählen ein gut funktionierender Verdauungstrakt, ausreichend Bewegung, erholsamer Schlaf und eine entspannte Grundhaltung. Gemeinsam erfassen wir den aktuellen Stand und erarbeiten eine Strategie, um Dein Ziel mit Freude und Motivation zu erreichen."
+  },
+  "reisen": {
+    "quote": "Erlebe die absolute Stille der mongolischen Steppe und finde zurück zum Ursprung.",
+    "p1": "Retreats liegen im Trend, an den unterschiedlichsten Orten der Welt. Ihnen allen gemeinsam ist der Wunsch, sich für eine Weile fernab vom Alltag ganz auf sich selbst zu konzentrieren.",
+    "p2": "Als ich 2025 zum ersten Mal in die Mongolei reiste, war ich vom ersten Moment an von der Magie der Weite und dem Klang der Stille verzaubert. Die atemberaubende Natur bietet die perfekte Gelegenheit, vollständig bei sich selbst anzukommen. Gemeinsam bereisen wir 14 Tage lang die Zentral- und Nordmongolei, begleitet von einem professionellen Fahrer und einem deutschsprachigen Reiseleiter, der vor Ort alle organisatorischen Angelegenheiten übernimmt.",
+    "p3": "Jeder Zwischenstopp eignet sich perfekt für unsere Meditations- und Achtsamkeitseinheiten, die wir jeden Morgen vor dem gemeinsamen Frühstück durchführen. Ob in der Nähe eines verlassenen Klosters, an einem imposanten Wasserfall oder am Ufer eines Sees, jeder Ort hat seine eigene Energie. Als besonderes Highlight bieten wir gemeinsame Meditationen mit einem buddhistischen Mönch oder ein Treffen mit einem Schamanen an. Die Einheiten sind immer freiwillig, jeder regeneriert Körper und Geist nach seinen eigenen Vorstellungen.",
+    "p4": "Während man sich ohne äußere Ablenkungen mit sich selbst beschäftigt, können alte, tief ins Unterbewusstsein verdrängte Themen wieder zum Vorschein kommen. Tagsüber stehe ich jedem für Einzelgespräche zur Verfügung, abends reflektieren wir gemeinsam in der Gruppe den Tag. Vor Reiseantritt findet ein Gespräch über Zoom statt, in dem alle Details besprochen werden.",
+    "note": "Genaue Informationen zum Ablauf und zur Buchung erhältst Du gern auf Anfrage.",
+    "fact1Title": "14 Tage Reise",
+    "fact1Text": "Zentral- und Nordmongolei, professionell organisiert von Odkha Travel",
+    "fact2Title": "Tägliche Meditation",
+    "fact2Text": "Achtsamkeitseinheiten jeden Morgen vor dem Frühstück",
+    "fact3Title": "Mönche & Schamane treffen",
+    "fact3Text": "Gemeinsame Meditation mit einem buddhistischen Mönch, Treffen mit einem Schamanen",
+    "fact4Title": "Übernachtung in der Natur",
+    "fact4Text": "Hotels, Jurten-Camps und Zelte in wilder Natur",
+    "fact5Title": "Vollverpflegung",
+    "fact5Text": "Drei Mahlzeiten pro Tag, plus persönliches Reisetagebuch"
+  },
+  "prices": {
+    "heading": "Transparente Preise, individuell auf Dich abgestimmt",
+    "card1Title": "Entspannungscoaching",
+    "card2Title": "Ernährungsberatung",
+    "card3Title": "Keine Angst vor der Abschlussprüfung",
+    "card1Dur": "60 Minuten",
+    "card2Dur": "60 Minuten",
+    "card3Dur": "120 Minuten · 3 bis 6 Teilnehmende",
+    "card1Price1": "50 €",
+    "card1Price2": "75 €",
+    "card2Price1": "50 €",
+    "card2Price2": "75 €",
+    "card3Price": "30 €",
+    "note": "Du bist Dir nicht sicher, welches Angebot zu Dir passt? Schreib mir einfach, wir finden es gemeinsam heraus."
   }
 }

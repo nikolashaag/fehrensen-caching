@@ -11,6 +11,65 @@
       ]
     },
     {
+      "label": "Drei Säulen (Übersicht)",
+      "fields": [
+        { "key": "pillars.title1", "label": "Säule 1 – Titel", "type": "text" },
+        { "key": "pillars.text1", "label": "Säule 1 – Text", "type": "textarea" },
+        { "key": "pillars.title2", "label": "Säule 2 – Titel", "type": "text" },
+        { "key": "pillars.text2", "label": "Säule 2 – Text", "type": "textarea" },
+        { "key": "pillars.title3", "label": "Säule 3 – Titel", "type": "text" },
+        { "key": "pillars.text3", "label": "Säule 3 – Text", "type": "textarea" }
+      ]
+    },
+    {
+      "label": "Entspannung",
+      "fields": [
+        { "key": "entspannung.heading", "label": "Überschrift", "type": "text" },
+        { "key": "entspannung.p1", "label": "Absatz 1", "type": "textarea" },
+        { "key": "entspannung.p2", "label": "Absatz 2 (Waldbaden)", "type": "textarea" },
+        { "key": "entspannung.p3", "label": "Absatz 3", "type": "textarea" }
+      ]
+    },
+    {
+      "label": "Ernährung",
+      "fields": [
+        { "key": "ernaehrung.heading", "label": "Überschrift", "type": "text" },
+        { "key": "ernaehrung.p1", "label": "Absatz 1", "type": "textarea" },
+        { "key": "ernaehrung.p2", "label": "Absatz 2", "type": "textarea" },
+        { "key": "ernaehrung.p3", "label": "Absatz 3", "type": "textarea" }
+      ]
+    },
+    {
+      "label": "Meditationsreisen",
+      "fields": [
+        { "key": "reisen.quote", "label": "Zitat / Leitsatz", "type": "textarea" },
+        { "key": "reisen.p1", "label": "Absatz 1", "type": "textarea" },
+        { "key": "reisen.p2", "label": "Absatz 2", "type": "textarea" },
+        { "key": "reisen.p3", "label": "Absatz 3", "type": "textarea" },
+        { "key": "reisen.p4", "label": "Absatz 4", "type": "textarea" },
+        { "key": "reisen.fact1Title", "label": "Eckpunkt 1 – Titel", "type": "text" },
+        { "key": "reisen.fact1Text", "label": "Eckpunkt 1 – Text", "type": "textarea" },
+        { "key": "reisen.fact2Title", "label": "Eckpunkt 2 – Titel", "type": "text" },
+        { "key": "reisen.fact2Text", "label": "Eckpunkt 2 – Text", "type": "textarea" },
+        { "key": "reisen.fact3Title", "label": "Eckpunkt 3 – Titel", "type": "text" },
+        { "key": "reisen.fact3Text", "label": "Eckpunkt 3 – Text", "type": "textarea" },
+        { "key": "reisen.fact4Title", "label": "Eckpunkt 4 – Titel", "type": "text" },
+        { "key": "reisen.fact4Text", "label": "Eckpunkt 4 – Text", "type": "textarea" },
+        { "key": "reisen.fact5Title", "label": "Eckpunkt 5 – Titel", "type": "text" },
+        { "key": "reisen.fact5Text", "label": "Eckpunkt 5 – Text", "type": "textarea" },
+        { "key": "reisen.note", "label": "Hinweis unter den Eckpunkten", "type": "textarea" }
+      ]
+    },
+    {
+      "label": "Über mich",
+      "fields": [
+        { "key": "about.name", "label": "Name", "type": "text" },
+        { "key": "about.intro", "label": "Einleitung", "type": "textarea" },
+        { "key": "about.pullquote", "label": "Zitat", "type": "textarea" },
+        { "key": "about.body", "label": "Fließtext", "type": "textarea" }
+      ]
+    },
+    {
       "label": "Meine Praxis",
       "fields": [
         { "key": "praxis.heading", "label": "Überschrift", "type": "text" },
@@ -20,11 +79,21 @@
       ]
     },
     {
-      "label": "Über mich",
+      "label": "Preise",
       "fields": [
-        { "key": "about.name", "label": "Name", "type": "text" },
-        { "key": "about.intro", "label": "Einleitung", "type": "textarea" },
-        { "key": "about.pullquote", "label": "Zitat", "type": "textarea" }
+        { "key": "prices.heading", "label": "Überschrift", "type": "text" },
+        { "key": "prices.card1Title", "label": "Angebot 1 – Titel", "type": "text" },
+        { "key": "prices.card1Dur", "label": "Angebot 1 – Dauer", "type": "text" },
+        { "key": "prices.card1Price1", "label": "Angebot 1 – Preis (Kinder/Jugendliche)", "type": "text" },
+        { "key": "prices.card1Price2", "label": "Angebot 1 – Preis (Erwachsene)", "type": "text" },
+        { "key": "prices.card2Title", "label": "Angebot 2 – Titel", "type": "text" },
+        { "key": "prices.card2Dur", "label": "Angebot 2 – Dauer", "type": "text" },
+        { "key": "prices.card2Price1", "label": "Angebot 2 – Preis (Kinder/Jugendliche)", "type": "text" },
+        { "key": "prices.card2Price2", "label": "Angebot 2 – Preis (Erwachsene)", "type": "text" },
+        { "key": "prices.card3Title", "label": "Angebot 3 – Titel", "type": "text" },
+        { "key": "prices.card3Dur", "label": "Angebot 3 – Dauer / Teilnehmer", "type": "text" },
+        { "key": "prices.card3Price", "label": "Angebot 3 – Preis", "type": "text" },
+        { "key": "prices.note", "label": "Hinweis unter den Preisen", "type": "textarea" }
       ]
     },
     {
