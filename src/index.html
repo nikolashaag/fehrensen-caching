@@ -361,15 +361,6 @@ img{display:block;max-width:100%;height:auto}
   display:flex;align-items:center;justify-content:center;transition:all .35s var(--ease)}
 .socials a:hover{background:var(--clay);border-color:var(--clay);transform:translateY(-3px)}
 .socials svg{width:17px;height:17px;fill:var(--cream)}
-.newsletter{margin-top:.4rem}
-.newsletter form{display:flex;gap:.5rem;margin-top:.9rem;max-width:330px}
-.newsletter input{flex:1;background:rgba(243,236,223,.07);border:1px solid rgba(243,236,223,.22);border-radius:100px;
-  padding:.7em 1.1em;color:var(--cream);font-family:var(--font-sans);font-size:.9rem;outline:none;transition:border .3s}
-.newsletter input::placeholder{color:rgba(243,236,223,.5)}
-.newsletter input:focus{border-color:var(--clay)}
-.newsletter button{background:var(--clay);border:none;color:var(--paper);border-radius:100px;padding:.7em 1.2em;cursor:pointer;font-weight:600;font-size:.88rem;transition:background .3s}
-.newsletter button:hover{background:var(--clay-deep)}
-.newsletter .ok{font-size:.85rem;color:var(--moss-light);margin-top:.7rem;display:none}
 .foot-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;align-items:center;
   margin-top:clamp(2.5rem,5vw,3.5rem);padding-top:1.5rem;border-top:1px solid rgba(243,236,223,.14);font-size:.82rem;color:rgba(243,236,223,.55)}
 .foot-legal{display:flex;flex-wrap:wrap;gap:1.2rem}
@@ -609,7 +600,7 @@ h1,h2,h3,h4,h5{font-weight:400;letter-spacing:-.01em}
           <div class="fact"><span class="fi">05</span><div><b>{{cms:reisen.fact5Title}}</b><span>{{cms:reisen.fact5Text}}</span></div></div>
         </div>
         <div class="reise-cta">
-          <a class="btn btn--clay" href="mailto:kontakt@fehrensen-coaching.de?subject=Anfrage%20Meditationsreise%20Mongolei">Reise anfragen <span class="arr">↗</span></a>
+          <a class="btn btn--clay" href="#kontakt">Reise anfragen <span class="arr">↗</span></a>
         </div>
         <p class="reise-note" style="margin-top:1.1rem">{{cms:reisen.note}}</p>
       </aside>
@@ -666,7 +657,7 @@ h1,h2,h3,h4,h5{font-weight:400;letter-spacing:-.01em}
         <p class="dur">{{cms:prices.card1Dur}}</p>
         <div class="tier"><span>Kinder &amp; Jugendliche bis 18 J.</span><b>{{cms:prices.card1Price1}}</b></div>
         <div class="tier"><span>Erwachsene</span><b>{{cms:prices.card1Price2}}</b></div>
-        <div class="pc-cta"><a href="mailto:kontakt@fehrensen-coaching.de?subject=Terminanfrage%20Entspannungscoaching">Termin anfragen →</a></div>
+        <div class="pc-cta"><a href="#kontakt">Termin anfragen →</a></div>
       </div>
       <div class="price-card" data-reveal data-d="2">
         <span class="pc-kicker">Einzelcoaching</span>
@@ -674,7 +665,7 @@ h1,h2,h3,h4,h5{font-weight:400;letter-spacing:-.01em}
         <p class="dur">{{cms:prices.card2Dur}}</p>
         <div class="tier"><span>Kinder &amp; Jugendliche bis 18 J.</span><b>{{cms:prices.card2Price1}}</b></div>
         <div class="tier"><span>Erwachsene</span><b>{{cms:prices.card2Price2}}</b></div>
-        <div class="pc-cta"><a href="mailto:kontakt@fehrensen-coaching.de?subject=Terminanfrage%20Ern%C3%A4hrungsberatung">Termin anfragen →</a></div>
+        <div class="pc-cta"><a href="#kontakt">Termin anfragen →</a></div>
       </div>
       <div class="price-card feat" data-reveal data-d="3">
         <span class="ribbon">Für Jugendliche</span>
@@ -682,7 +673,7 @@ h1,h2,h3,h4,h5{font-weight:400;letter-spacing:-.01em}
         <h3>{{cms:prices.card3Title}}</h3>
         <p class="dur">{{cms:prices.card3Dur}}</p>
         <div class="tier"><span>pro Person</span><b>{{cms:prices.card3Price}}</b></div>
-        <div class="pc-cta"><a href="mailto:kontakt@fehrensen-coaching.de?subject=Anfrage%20Gruppencoaching%20Abschlusspr%C3%BCfung">Gruppe anfragen →</a></div>
+        <div class="pc-cta"><a href="#kontakt">Gruppe anfragen →</a></div>
       </div>
     </div>
     <p class="price-note">{{cms:prices.note}}</p>
@@ -697,7 +688,12 @@ h1,h2,h3,h4,h5{font-weight:400;letter-spacing:-.01em}
       <h2 data-reveal data-d="1">{{cms:contact.heading}}</h2>
       <p data-reveal data-d="1">{{cms:contact.text}}</p>
     </div>
-    <form class="contact-form" id="contactForm" data-reveal data-d="2" novalidate>
+    <form class="contact-form" id="contactForm" data-reveal data-d="2" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="c26bbee9-457c-4e85-812d-4867fc1bab64" />
+      <input type="hidden" name="subject" value="Neue Anfrage über fehrensen-coaching.de" />
+      <input type="hidden" name="from_name" value="Fehrensen Coaching Website" />
+      <!-- Honeypot gegen Spam: echte Besucher lassen dieses Feld leer, viele Bots füllen es aus -->
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
       <div class="cf-row">
         <div class="cf-field">
           <label for="cf-name">Name</label>
@@ -722,8 +718,8 @@ h1,h2,h3,h4,h5{font-weight:400;letter-spacing:-.01em}
         <label for="cf-msg">Nachricht</label>
         <textarea id="cf-msg" name="message" rows="4" placeholder="Worum geht es? Was möchtest Du erreichen?"></textarea>
       </div>
-      <button type="submit" class="btn cf-submit">Nachricht senden <span class="arr">↗</span></button>
-      <p class="cf-ok" id="cfOk">Danke! Dein E-Mail-Programm öffnet sich mit Deiner Nachricht. Bitte dort auf „Senden“ klicken.</p>
+      <button type="submit" class="btn cf-submit" id="cfSubmit">Nachricht senden <span class="arr">↗</span></button>
+      <p class="cf-ok" id="cfOk" role="status" aria-live="polite"></p>
     </form>
   </div>
 </section>
@@ -758,14 +754,6 @@ h1,h2,h3,h4,h5{font-weight:400;letter-spacing:-.01em}
           <li><a href="mailto:kontakt@fehrensen-coaching.de">kontakt@fehrensen-coaching.de</a></li>
           <li><address>Gabelsbergerstr. 4<br />83308 Trostberg</address></li>
         </ul>
-        <div class="newsletter">
-          <h4 style="margin-top:1.6rem">Newsletter</h4>
-          <form id="nlForm">
-            <input type="email" placeholder="Deine E-Mail-Adresse" aria-label="E-Mail-Adresse" required />
-            <button type="submit">Abonnieren</button>
-          </form>
-          <p class="ok" id="nlOk">Danke, ich melde mich bei Dir.</p>
-        </div>
       </div>
     </div>
     <div class="foot-bottom">
@@ -802,24 +790,39 @@ const io=new IntersectionObserver((entries)=>{
 },{threshold:.16,rootMargin:'0px 0px -8% 0px'});
 document.querySelectorAll('[data-reveal]').forEach(el=>io.observe(el));
 
-// newsletter (graceful, no backend)
-const nl=document.getElementById('nlForm');
-nl.addEventListener('submit',e=>{e.preventDefault();nl.reset();document.getElementById('nlOk').style.display='block';});
-
-// contact form -> opens email pre-filled to Christine (no backend needed)
+// contact form -> Web3Forms (sendet die Anfrage an kontakt@fehrensen-coaching.de)
 const cf=document.getElementById('contactForm');
-if(cf){cf.addEventListener('submit',function(e){
-  e.preventDefault();
-  const name=cf.querySelector('#cf-name').value.trim();
-  const email=cf.querySelector('#cf-email').value.trim();
-  if(!name||!email){[cf.querySelector('#cf-name'),cf.querySelector('#cf-email')].forEach(i=>{if(!i.value.trim())i.style.borderColor='var(--clay)';});return;}
-  const topic=cf.querySelector('#cf-topic').value;
-  const msg=cf.querySelector('#cf-msg').value.trim();
-  const subject='Anfrage: '+topic;
-  const body='Name: '+name+'\nE-Mail: '+email+'\nAnliegen: '+topic+'\n\n'+(msg||'(keine Nachricht)');
-  window.location.href='mailto:kontakt@fehrensen-coaching.de?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
-  document.getElementById('cfOk').style.display='block';
-});}
+if(cf){
+  const cfOk=document.getElementById('cfOk');
+  const cfBtn=document.getElementById('cfSubmit');
+  const cfBtnHtml=cfBtn.innerHTML;
+  cf.addEventListener('submit',async function(e){
+    e.preventDefault();
+    cfOk.style.display='block';
+    cfOk.style.color='';
+    cfOk.textContent='Wird gesendet …';
+    cfBtn.disabled=true;
+    cfBtn.textContent='Wird gesendet …';
+    try{
+      const res=await fetch(cf.action,{method:'POST',body:new FormData(cf),headers:{Accept:'application/json'}});
+      const data=await res.json();
+      if(data.success){
+        cf.reset();
+        cfOk.style.color='';
+        cfOk.textContent='Danke für Deine Nachricht! Ich melde mich persönlich bei Dir.';
+      }else{
+        cfOk.style.color='var(--clay)';
+        cfOk.textContent='Es gab ein Problem beim Senden. Bitte schreib mir direkt an kontakt@fehrensen-coaching.de.';
+      }
+    }catch(err){
+      cfOk.style.color='var(--clay)';
+      cfOk.textContent='Es gab ein Problem beim Senden. Bitte schreib mir direkt an kontakt@fehrensen-coaching.de.';
+    }finally{
+      cfBtn.disabled=false;
+      cfBtn.innerHTML=cfBtnHtml;
+    }
+  });
+}
 </script>
 </body>
 </html>
